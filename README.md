@@ -14,12 +14,12 @@
 Доступные методы API (названия говорят сами за себя):
 - api/auth/login (POST)
 - api/auth/logout (POST)
-- api/CreateUser (POST)
-- api/CreateEvent (POST)
-- api/GetEventList (GET)
-- api/AddParticipant (POST)
-- api/RemoveParticipant (POST)
-- api/DeleteEvent (POST)
+- api/CreateUser (POST) - Поля запроса: username, password, first_name, last_name, birthdate
+- api/CreateEvent (POST) - Поля запроса: header, text
+- api/GetEventList (GET) - Опциональный параметр user_id
+- api/AddParticipant (POST) - Поля запроса: event_id
+- api/RemoveParticipant (POST) - Поля запроса: event_id
+- api/DeleteEvent (POST) - Поля запроса: event_id
 
 ## Тестовый сервер
 Приложение доступно по адресу http://den4ikkovalev.pythonanywhere.com/
